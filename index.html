@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crocs · WhatsApp delivery demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="phone">
+  <div class="hdr">
+    <svg class="ic" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>
+    <img class="ava" src="assets/avatar.png" alt="Crocs">
+    <div style="flex:1;line-height:1.25">
+      <div class="name">Crocs <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:#9FE3D0"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+      <div class="sub" id="status">online</div>
+    </div>
+    <svg class="ic" id="reset" viewBox="0 0 24 24" title="Restart"><path d="M17.65 6.35A8 8 0 1 0 19.73 14h-2.08A6 6 0 1 1 12 6a5.9 5.9 0 0 1 4.22 1.78L13 11h7V4z"/></svg>
+  </div>
+  <div id="chat"></div>
+  <div class="foot">
+    <div class="box">Tap an option above</div>
+    <div class="mic"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg></div>
+  </div>
+</div>
+<input type="file" id="filepick" accept="image/*" style="display:none">
+<!-- journey.js defines the flow + image paths; engine.js renders it. Order matters. -->
+<script src="journey.js"></script>
+<script src="engine.js"></script>
+</body>
+</html>
