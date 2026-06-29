@@ -1,6 +1,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
-.phone{width:380px;max-width:100%;background:#EFEAE2;border-radius:22px;overflow:hidden;border:1px solid #d9d2c8;color:#111B21;display:flex;flex-direction:column;aspect-ratio:9/20;max-height:calc(100vh - 40px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.phone{height:min(844px,calc(100vh - 40px));aspect-ratio:9/16;max-width:100%;background:#EFEAE2;border-radius:22px;overflow:hidden;border:1px solid #d9d2c8;color:#111B21;display:flex;flex-direction:column;box-shadow:0 12px 40px rgba(0,0,0,.4)}
 .hdr{background:#008069;color:#fff;padding:10px 12px;display:flex;align-items:center;gap:10px;flex-shrink:0}
 .hdr img.ava{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#fff}
 .hdr .name{font-size:15px;font-weight:600;display:flex;align-items:center;gap:4px}
