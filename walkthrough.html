@@ -100,6 +100,16 @@
   .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* Print / Save-as-PDF: show everything, keep colours, keep steps whole */
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{background:#fff}
+    .wrap{max-width:none;padding:24px 28px}
+    .reveal{opacity:1 !important;transform:none !important;transition:none !important}
+    .step{break-inside:avoid;page-break-inside:avoid}
+    .btn{border:1px solid var(--line)}
+  }
 </style>
 </head>
 <body>
@@ -109,7 +119,6 @@
     <h1>Post Purchase Demo</h1>
     <div class="actions">
       <a class="btn primary" href="https://pipgdm.github.io/crocs-whatsapp-demo/" target="_blank" rel="noopener">Open the live demo →</a>
-      <a class="btn ghost" href="https://github.com/pipgdm/crocs-whatsapp-demo" target="_blank" rel="noopener">View the code</a>
     </div>
   </header>
 

@@ -28,7 +28,7 @@ const flow={
     o:[['Back to Main Menu','start'],['Continue','qrcode']]},
   wineandbeer:{m:['Ok, we&#39;ll deliver to <b>Wine &amp; Beer, Gin Ln</b>.<br><br>📍 9 Gin Lane, London SE24 9JR<br><br><b>Opening times</b><br>Mon–Sat&nbsp;&nbsp;10:00am – 10:00pm<br>Sun&nbsp;&nbsp;12:00pm – 6:00pm'],
     o:[['Back to Main Menu','start'],['Continue','qrcode']]},
-  qrcode:{m:['<img class="prod" src="'+IMG.qr+'" alt="Collection QR code" style="width:170px;display:block;margin:2px auto 8px">Show this QR code at the till to collect your Crocs.'],
+  qrcode:{m:['<b>Your Crocs have been delivered 📦</b><br><br><img class="prod" src="'+IMG.qr+'" alt="Collection QR code" style="width:170px;display:block;margin:2px auto 8px">Show this QR code at the till to collect your Crocs.'],
     o:[['Collected','delivered']]},
   delivered:{m:['<img class="prod" src="'+IMG.wiggle+'" alt="Crocs">How are your Crocs, Aisha? Looking snazzy? 😎'],
     o:[["They&#39;re great! Leave Review 😍",'review'],['Not Quite Right — Return','returnflow']]},
